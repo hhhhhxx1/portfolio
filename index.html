@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riju Biswas | Portfolio</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif;}
+    body {background:#f9f9f9; color:#333; line-height:1.6;}
+
+    header {
+      background:#111;
+      color:#fff;
+      text-align:center;
+      padding:50px 20px;
+    }
+    header h1 {font-size:3rem;}
+    header p {font-size:1.2rem; margin-top:10px;}
+
+    nav {
+      background:#222;
+      padding:15px;
+      text-align:center;
+    }
+    nav a {
+      color:#fff;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+    nav a:hover {color:#ffd700;}
+
+    section {padding:60px 10%;}
+    h2 {text-align:center; font-size:2rem; margin-bottom:20px; color:#444;}
+
+    /* ==== ABOUT ==== */
+    #about img {
+      width:180px; height:180px;
+      border-radius:50%;
+      object-fit:cover;
+      display:block;
+      margin:0 auto 20px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+    #about p {
+      max-width:700px;
+      margin:auto;
+      font-size:1.1rem;
+      text-align:center;
+    }
+
+    /* ==== PROJECTS ==== */
+    .projects {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap:20px;
+    }
+    .project {
+      background:#fff;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      transition:0.3s;
+      text-align:center;
+    }
+    .project:hover {transform:scale(1.05);}
+    .project img {
+      width:100%;
+      height:150px;
+      object-fit:cover;
+      border-radius:8px;
+      margin-bottom:10px;
+    }
+    .project a button {
+      margin-top:10px;
+      padding:10px 20px;
+      border:none;
+      border-radius:5px;
+      background:#111;
+      color:#fff;
+      cursor:pointer;
+      transition:0.3s;
+    }
+    .project a button:hover {background:#ffd700; color:#111;}
+
+    /* ==== CONTACT ==== */
+    #contact ul {
+      list-style:none;
+      text-align:center;
+      font-size:1.1rem;
+    }
+    #contact li {margin:10px 0;}
+    #contact a {color:#111; text-decoration:none;}
+    #contact a:hover {color:#ffd700;}
+
+    footer {
+      background:#111;
+      color:#fff;
+      text-align:center;
+      padding:15px;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Riju Biswas</h1>
+    <p>Video Editor | Creator</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <<section id="about">
+  <h2>About Me</h2>
+  <img src="WhatsApp Image 2025-08-14 at 21.33.31_794eb9b5.jpg"
+       alt="Riju Biswas"
+       style="width:180px; height:180px; border-radius:50%; object-fit:cover; display:block; margin:0 auto 20px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+  <p>Hello! My name is <strong>Riju Biswas</strong>.  
+  My hobby is <strong>Video Editing</strong>.  
+  I love creating and editing content that inspires and entertains people.</p>
+</section>
+
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>check my ae edit.</p>
+        <a href="https://www.instagram.com/reel/DMw-kVpMfat/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><button>View</button></a>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Another Project.</p>
+        <a href="https://www.instagram.com/reel/DMnjBAnTw0q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><button>View</button></a>
+      </div>
+       <div class="project">
+        <h3>Project 3</h3>
+        <p>Another project showcase here.</p>
+        <a href="https://www.instagram.com/reel/C8yUNA8S668/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><button>View</button></a>
+      </div>
+      <div class="project">
+        <h3>Project 3</h3>
+        <p>Another project showcase here.</p>
+        <a href="https://www.instagram.com/reel/C8yUNA8S668/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><button>View</button></a>
+      </div>
+    </div>a
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <ul>
+      <li>📸 Instagram: <a href="https://instagram.com/riju_editx" target="_blank">@riju_editx</a></li>
+      <li>💬 WhatsApp: <a href="https://wa.me/917364934516" target="_blank">+91 73649 34516</a></li>
+      <li>📧 Email: <a href="mailto:yourname@email.com">rijueditz4@gmail.com</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Riju Biswas | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Simple smooth scroll effect
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</html>
